@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Заказ</title>
+  </head>
+
+  <html>
+    <body>
+        </a>
+       <style>
+        .nav-active {
+            background-color: #6385e1;
+            font-weight: bold;
+            color: #000;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+            display: block;
+        }
+        ul li a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+      <h2>Навигация по сайту:</h2>
+      <ul>
+       <li><a href="mamma_lia.html" target="_self">Главная</a></li>
+        <li><a href="#section1" target="_self">Хиты продаж</a></li>
+        <li><a href="catalog.html" target="_self">Каталог тортов</a></li>
+        <li><a href="order.html" target="_self" class="nav-active">Заказ тортов</a></li>
+        <li><a href="contacts.html" target="_self">Контакты</a></li>
+        <li>
+          <a href="https://artlunch.am/ru" target="_blank">Наши партнеры</a>
+        </li>
+      </ul>
+    </nav>
+      <h3 align="center">Сделать заказ</h3>
+      <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+
+        <p>
+          ФИО:
+          <input
+            type="Text"
+            name="name"
+            size="20"
+            value="Иванов Иван Иванович"
+          />
+        </p>
+
+        <p>
+          Бисквит: <input type="Radio" name="cake" value="vanilla" />Ванильный
+          <input type="Radio" name="cake" value="chocko" checked />Шоколадный
+          <input type="Radio" name="cake" value="other" />Другое
+        </p>
+
+        <p>
+          Начинка
+
+          <input type="radio" name="filling" value="vanilla" />Ванильная
+          <input
+            type="radio"
+            name="filling"
+            value="chocolate"
+            checked
+          />Шоколадная
+          <input type="radio" name="filling" value="fruit" />Фруктовая
+          <input type="radio" name="filling" value="caramel" />Карамельная
+          <input type="radio" name="filling" value="other" />Другое
+        </p>
+        <p>Дополнительные опции:</p>
+        <input type="checkbox" name="options" value="candles" />Праздничные
+        свечи (+200 руб)
+        <input type="checkbox" name="options" value="gift_box" />Подарочная
+        упаковка (+500 руб)
+        <input type="checkbox" name="options" value="delivery" />Доставка (+500
+        руб)
+        <p>
+          Дата доставки:
+          <input type="date" name="user_date" value="2024-10-02" />
+        </p>
+        <p>
+          Время доставки
+          <select name="time">
+            <option value="8:00-12:00">8:00-12:00</option>
+            <option value="13:00-16:00">13:00-16:00</option>
+            <option value="17:00-20:00">17:00-20:00</option>
+            <option value="21:00-1:00">21:00-1:00</option>
+          </select>
+        </p>
+
+        <p>
+          Полный адрес:
+          <br />
+          <textarea cols="80" rows="4" name="textarea">г.Москва, улица Арбат, д. 6 стр. 2, этаж 3, кв 12</textarea>
+        </p>
+        <p>
+          <label>Электронная почта:</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="example@mail.ru"
+            required
+          />
+        </p>
+
+        <p>
+          <label>Мобильный телефон:</label><br />
+          <input
+            type="tel"
+            name="q"
+            placeholder="+7 (999) 123-45-67"
+            required
+          />
+        </p>
+
+        <p>
+          Промокод:
+          <input type="Password" name="password" size="9" value="cake" />
+        </p>
+
+        <input type="hidden" name="function" value="page" />
+        <input type="hidden" name="page_id" value="3" />
+
+        <p>
+          <input type="Reset" name="Reset" value="Обновить" />
+          <input type="Submit" name="submit" value="Отправить" />
+        </p>
+      </form>
+      <br>
+      <br>
+    <section id="contacts"></section>
+   <table>
+    <tr align="center">
+      <h3>Контакты</h3>
+    </tr>
+    <td width="300"> <b>Номер телефона - </b><span id=phone> +7 999 444 33 22 </span></td>
+    <td><b> Email:</b> <span id=email> mamma_lia@yandex.ru</span></td>
+    <td> <a href="https://artlunch.am/ru" target="_blank"><img src="photo\art_lunch.png" height="300px" ></a></td>
+
+   </table>
+    </body>
+  </html>
+</html>
