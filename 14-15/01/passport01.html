@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM_JS. Считываем информацию из DOM</title>
+  </head>
+  <body>
+    <ul>
+    <li><a href="C:\Users\elina\OneDrive\Рабочий стол\VSC\DOM_Screen\14-15\01\passport01.html" target="_self"><b>01</b></a>
+    <li><a href="C:\Users\elina\OneDrive\Рабочий стол\VSC\DOM_Screen\14-15\02\passport.html" target="_self">02</a>
+        <li><a href="C:\Users\elina\OneDrive\Рабочий стол\VSC\DOM_Screen\14-15\03\formula.html" target="_self">03</a>
+        
+</ul>
+    <table
+      style="
+        background-image: url(https://grizly.club/uploads/posts/2022-12/1670144884_grizly-club-p-shablon-pasporta-rf-dlya-zapolneniya-3.jpg);
+        background-size: 700px;
+      "
+      ;
+      align="left"
+      cellspacing="0"
+      cellpadding="5"
+      border="1"
+      width="700px"
+    >
+      <tr>
+        <th align="center" colspan="4" width="130%" heigh="200%">
+          Р О С С И Й С К А Я &emsp; Ф Е Д Е Р А Ц И Я
+        </th>
+      </tr>
+      <tr>
+        <td height="100px" colspan="4" valign="bottom">
+          Паспорт выдан <span id="passport_given_by"> ГУ МВД ПО Г МОСКВЕ </span>
+        </td>
+        <td colspan="3" rowspan="4">1234 5678</td>
+      </tr>
+      <tr>
+        <td align="left" height="100px" valign="bottom">
+          Дата выдачи<span id="passport_date"> 27.11.2020 </span>
+        </td>
+        <td valign="bottom" colspan="2">
+          Код подразделения<span id="code"> 227 </span>
+        </td>
+      </tr>
+      <tr>
+        <td height="100px" colspan="3" align="right">
+          Личный код<span id="personal_code"> 342</span>
+        </td>
+      </tr>
+      <tr>
+        <td height="100px" colspan="3" align="right">
+          Личная подпись<span id="signature"> () </span>
+        </td>
+      </tr>
+
+      <tr>
+        <td height="300px" align="left" valign="bottom" rowspan="7">
+          <img height="200px" src="C:\Users\elina\OneDrive\Рабочий стол\VSC\DOM_Screen\14-15\02\элечка.jpg" alt="" />
+        </td>
+        <td height="100px" colspan="2">
+          Фамилия: <span id="surname">Худадян</span>
+        </td>
+        <td colspan="4" rowspan="5">1234 5678</td>
+      </tr>
+      <tr>
+        <td height="10px" colspan="2">Имя: <span id="name">Элина</span></td>
+      </tr>
+      <tr>
+        <td height="10px" colspan="2">
+          Отчество: <span id="fatherName">Рубеновна</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Пол <span id="gender">ЖЕН</span></td>
+        <td>Дата рождения <span id="date">27.10.2006</span></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Место рождения <span id="place_of_birth">г. Ереван, Армения</span>
+        </td>
+      </tr>
+    </table>
+    <p><img alt="Не подгрузилось :(" src=screenshot.jpg width="600" >
+    <br>Скриншот с нахождением элементов по ID
+</p>
+  </body>
+</html>
