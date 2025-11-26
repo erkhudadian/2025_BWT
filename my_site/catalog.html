@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог тортов - Mamma Lia!</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="mamma_lia.html">Mamma Lia!</a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="mamma_lia.html">Главная</a>
+          <a class="nav-link" href="mamma_lia.html#hits">Хиты продаж</a>
+          <a class="nav-link nav-active" href="catalog.html">Каталог</a>
+          <a class="nav-link" href="order.html">Заказ</a>
+                              <a class="nav-link" href="reviews.html">Отзывы</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </div>
+      </div>
+    </nav>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Каталог</title>
-</head>
+    <div class="container mt-4">
+      <h1 class="text-center">Каталог тортов</h1>
+      <p class="text-center text-muted">Выберите компоненты для вашего торта</p>
+    </div>
 
-<body>
- <style>
-        .nav-active {
-            background-color: #6385e1;
-            font-weight: bold;
-            color: #000;
-            padding: 5px;
-            border-radius: 3px;
-        }
-        ul li a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px;
-            display: block;
-        }
-        ul li a:hover {
-            background-color: #e0e0e0;
-        }
-    </style>
-      <h2>Навигация по сайту:</h2>
-      <ul>
-       <li><a href="mamma_lia.html" target="_self" >Главная</a></li>
-        <li><a href="mamma_lia.html" target="_self">Хиты продаж</a></li>
-        <li><a href="catalog.html" target="_self" class="nav-active">Каталог тортов</a></li>
-        <li><a href="order.html" target="_self">Заказ тортов</a></li>
-        <li><a href="#contacts" target="_self">Контакты</a></li>
-        <li>
-          <a href="https://artlunch.am/ru" target="_blank">Наши партнеры</a>
-        </li>
-      </ul>
-  <h3 align="center">Каталог</h3>
-<ol>
-  <li>Бисквит
-    <ul>
-      <li>Ванильный</li>
-      <li>Шоколадный</li>
-    </ul>
-  </li>
-  <li>Начинка
-    <ul>
-      <li>Ванильный крем</li>
-      <li>Шоколадный крем</li>
-      <li>Карамельная</li>
-      <li>Фруктовая</li>
-      <li>Можем сделать любую другую на ваш вкус!</li>
-    </ul>
-  </li>
- <li>Украшения
-    <ul>
-      <li>Шоколадные фигурки</li>
-      <li>Фигурки из мастики</li>
-      <li>Ягоды</li>
-      <li>Посыпка</li>
-      <li>Можем сделать другие по вашему пожеланию</li>
-    </ul>
-  </li>
-</ol>
-    <section id="contacts"></section>
-   <table>
-    <tr align="center">
-        <br>
-        <br>
-      <h3>Контакты</h3>
-    </tr>
-    <td width="300"> <b>Номер телефона - </b><span id=phone> +7 999 444 33 22 </span></td>
-    <td><b> Email:</b> <span id=email> mamma_lia@yandex.ru</span></td>
-    <td> <a href="https://artlunch.am/ru" target="_blank"><img src="photo\art_lunch.png" height="300px" ></a></td>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-header catalog-header">
+              <h5 class="mb-0">Бисквит</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>• Ванильный</li>
+                <li>• Шоколадный</li>
+                <li>• Красный бархат</li>
+                <li>• Кокосовый</li>
+                <li>• Медовый</li>
+                <li><strong>Другие по желанию</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-   </table>
-</body>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+             <div class="card-header catalog-header">
+              <h5 class="mb-0">Начинка</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>• Ванильный крем</li>
+                <li>• Шоколадный крем</li>
+                <li>• Карамельная</li>
+                <li>• Фруктовая</li>
+                <li>• Сырный крем</li>
+                <li>• Сметанный крем</li>
+                <li><strong>Другие по желанию</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+             <div class="card-header catalog-header">
+              <h5 class="mb-0">Украшения</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>• Шоколадные фигурки</li>
+                <li>• Фигурки из мастики</li>
+                <li>• Свежие ягоды</li>
+                <li>• Цветочный декор</li>
+                <li>• Посыпка и карамель</li>
+                <li>• Надписи и рисунки</li>
+                <li><strong>Другие по желанию</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="order.html" class="btn btn-primary btn-lg">Заказать торт</a>
+      </div>
+    </div>
+
+    <div id="contacts" class="bg-light mt-5 py-4">
+      <div class="container">
+        <h3 class="text-center">Контакты</h3>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <p><strong>Телефон:</strong> +7 999 444 33 22</p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Email:</strong> mamma_lia@yandex.ru</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <div class="container">
+        <p class="mb-0">2024 Mamma Lia! Кондитерская</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

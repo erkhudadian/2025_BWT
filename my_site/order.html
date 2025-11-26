@@ -2,146 +2,290 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Заказ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заказ торта - Mamma Lia!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
   </head>
-
-  <html>
-    <body>
-        </a>
-       <style>
-        .nav-active {
-            background-color: #6385e1;
-            font-weight: bold;
-            color: #000;
-            padding: 5px;
-            border-radius: 3px;
-        }
-        ul li a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px;
-            display: block;
-        }
-        ul li a:hover {
-            background-color: #e0e0e0;
-        }
-    </style>
-      <h2>Навигация по сайту:</h2>
-      <ul>
-       <li><a href="mamma_lia.html" target="_self">Главная</a></li>
-        <li><a href="#section1" target="_self">Хиты продаж</a></li>
-        <li><a href="catalog.html" target="_self">Каталог тортов</a></li>
-        <li><a href="order.html" target="_self" class="nav-active">Заказ тортов</a></li>
-        <li><a href="contacts.html" target="_self">Контакты</a></li>
-        <li>
-          <a href="https://artlunch.am/ru" target="_blank">Наши партнеры</a>
-        </li>
-      </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="mamma_lia.html">Mamma Lia!</a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="mamma_lia.html">Главная</a>
+          <a class="nav-link" href="mamma_lia.html#hits">Хиты продаж</a>
+          <a class="nav-link" href="catalog.html">Каталог</a>
+          <a class="nav-link nav-active" href="order.html">Заказ</a>
+          <a class="nav-link" href="reviews.html">Отзывы</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </div>
+      </div>
     </nav>
-      <h3 align="center">Сделать заказ</h3>
-      <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
 
-        <p>
-          ФИО:
+    <div class="container mt-4">
+      <h1 class="text-center">Заказ торта</h1>
+      <p class="text-center text-muted">
+        Заполните форму для заказа вашего торта
+      </p>
+    </div>
+
+    <div class="container mt-4">
+      <form
+        action="https://www.bing.com/search?"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
+      >
+        <div class="mb-3">
+          <label class="form-label">ФИО:</label>
           <input
-            type="Text"
-            name="name"
-            size="20"
+            type="text"
+            class="form-control"
+            name="customer_name"
             value="Иванов Иван Иванович"
-          />
-        </p>
-
-        <p>
-          Бисквит: <input type="Radio" name="cake" value="vanilla" />Ванильный
-          <input type="Radio" name="cake" value="chocko" checked />Шоколадный
-          <input type="Radio" name="cake" value="other" />Другое
-        </p>
-
-        <p>
-          Начинка
-
-          <input type="radio" name="filling" value="vanilla" />Ванильная
-          <input
-            type="radio"
-            name="filling"
-            value="chocolate"
-            checked
-          />Шоколадная
-          <input type="radio" name="filling" value="fruit" />Фруктовая
-          <input type="radio" name="filling" value="caramel" />Карамельная
-          <input type="radio" name="filling" value="other" />Другое
-        </p>
-        <p>Дополнительные опции:</p>
-        <input type="checkbox" name="options" value="candles" />Праздничные
-        свечи (+200 руб)
-        <input type="checkbox" name="options" value="gift_box" />Подарочная
-        упаковка (+500 руб)
-        <input type="checkbox" name="options" value="delivery" />Доставка (+500
-        руб)
-        <p>
-          Дата доставки:
-          <input type="date" name="user_date" value="2024-10-02" />
-        </p>
-        <p>
-          Время доставки
-          <select name="time">
-            <option value="8:00-12:00">8:00-12:00</option>
-            <option value="13:00-16:00">13:00-16:00</option>
-            <option value="17:00-20:00">17:00-20:00</option>
-            <option value="21:00-1:00">21:00-1:00</option>
-          </select>
-        </p>
-
-        <p>
-          Полный адрес:
-          <br />
-          <textarea cols="80" rows="4" name="textarea">г.Москва, улица Арбат, д. 6 стр. 2, этаж 3, кв 12</textarea>
-        </p>
-        <p>
-          <label>Электронная почта:</label><br />
-          <input
-            type="email"
-            name="email"
-            placeholder="example@mail.ru"
             required
           />
-        </p>
+        </div>
 
-        <p>
-          <label>Мобильный телефон:</label><br />
+        <div class="mb-3">
+          <label class="form-label">Бисквит:</label>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="biscuit_type"
+              value="vanilla"
+              id="vanilla"
+            />
+            <label class="form-check-label" for="vanilla">Ванильный</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="biscuit_type"
+              value="chocolate"
+              id="chocolate"
+              checked
+            />
+            <label class="form-check-label" for="chocolate">Шоколадный</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="biscuit_type"
+              value="other"
+              id="other_biscuit"
+            />
+            <label class="form-check-label" for="other_biscuit">Другое</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Начинка:</label>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="filling"
+              value="vanilla"
+              id="vanilla_filling"
+            />
+            <label class="form-check-label" for="vanilla_filling"
+              >Ванильная</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="filling"
+              value="chocolate"
+              id="chocolate_filling"
+              checked
+            />
+            <label class="form-check-label" for="chocolate_filling"
+              >Шоколадная</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="filling"
+              value="fruit"
+              id="fruit_filling"
+            />
+            <label class="form-check-label" for="fruit_filling"
+              >Фруктовая</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="filling"
+              value="caramel"
+              id="caramel_filling"
+            />
+            <label class="form-check-label" for="caramel_filling"
+              >Карамельная</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="form-check-input"
+              name="filling"
+              value="other"
+              id="other_filling"
+            />
+            <label class="form-check-label" for="other_filling">Другое</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Дополнительные опции:</label>
+          <div>
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="candles"
+              value="yes"
+              id="candles"
+            />
+            <label class="form-check-label" for="candles"
+              >Праздничные свечи (+200 руб)</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="gift_box"
+              value="yes"
+              id="gift_box"
+            />
+            <label class="form-check-label" for="gift_box"
+              >Подарочная упаковка (+500 руб)</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="delivery"
+              value="yes"
+              id="delivery"
+            />
+            <label class="form-check-label" for="delivery"
+              >Доставка (+500 руб)</label
+            >
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Дата доставки:</label>
+            <input
+              type="date"
+              class="form-control"
+              name="delivery_date"
+              value="2024-12-03"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Время доставки:</label>
+            <select class="form-select" name="delivery_time" required>
+              <option value="8:00-12:00">8:00-12:00</option>
+              <option value="13:00-16:00">13:00-16:00</option>
+              <option value="17:00-20:00">17:00-20:00</option>
+              <option value="21:00-1:00">21:00-1:00</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Полный адрес:</label>
+          <textarea class="form-control" name="address" rows="3" required>
+г.Москва, улица Арбат, д. 6 стр. 2, этаж 3, кв 12</textarea
+          >
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Электронная почта:</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              value="mamma_lia@yandex.ru"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Мобильный телефон:</label>
+            <input
+              type="tel"
+              class="form-control"
+              name="phone"
+              value="+7 999 444 33 22"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Промокод:</label>
           <input
-            type="tel"
-            name="q"
-            placeholder="+7 (999) 123-45-67"
-            required
+            type="password"
+            class="form-control"
+            name="promo_code"
+            value="cake"
           />
-        </p>
+        </div>
 
-        <p>
-          Промокод:
-          <input type="Password" name="password" size="9" value="cake" />
-        </p>
-
-        <input type="hidden" name="function" value="page" />
-        <input type="hidden" name="page_id" value="3" />
-
-        <p>
-          <input type="Reset" name="Reset" value="Обновить" />
-          <input type="Submit" name="submit" value="Отправить" />
-        </p>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Отправить заказ</button>
+        </div>
       </form>
-      <br>
-      <br>
-    <section id="contacts"></section>
-   <table>
-    <tr align="center">
-      <h3>Контакты</h3>
-    </tr>
-    <td width="300"> <b>Номер телефона - </b><span id=phone> +7 999 444 33 22 </span></td>
-    <td><b> Email:</b> <span id=email> mamma_lia@yandex.ru</span></td>
-    <td> <a href="https://artlunch.am/ru" target="_blank"><img src="photo\art_lunch.png" height="300px" ></a></td>
+    </div>
 
-   </table>
-    </body>
-  </html>
+    <div id="contacts" class="bg-light mt-5 py-4">
+      <div class="container">
+        <h3 class="text-center">Контакты</h3>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <p><strong>Телефон:</strong> +7 999 444 33 22</p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Email:</strong> mamma_lia@yandex.ru</p>
+          </div>
+          <div class="col-12 mt-3">
+            <p><strong>Наши партнеры:</strong></p>
+            <a href="https://artlunch.am/ru" target="_blank">
+              <img
+                src="photo/art_lunch.png"
+                alt="Art Lunch"
+                style="max-height: 100px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <div class="container">
+        <p class="mb-0">2024 Mamma Lia! Кондитерская</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
